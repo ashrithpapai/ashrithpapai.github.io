@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashrith Papai — Salesforce Marketing Cloud Specialist</title>
+<meta name="description" content="Portfolio of Ashrith Papai, Salesforce Marketing Cloud Specialist: journeys, CloudPages, SQL, SMS, integrations and platform administration with measurable impact.">
+<meta property="og:title" content="Ashrith Papai — Salesforce Marketing Cloud Specialist">
+<meta property="og:description" content="Seven Marketing Cloud workstreams with measurable impact, plus CampaignOps, an open-source campaign link checker.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230C1A27%22/><text x=%2250%22 y=%2266%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22%237FD6C2%22 font-family=%22Arial%22 font-weight=%22700%22>AP</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#0B6E5F}a:hover{color:#08493F}
+ul.pf{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+ul.pf li{position:relative;padding-left:22px;font-size:15px;line-height:1.6;color:#2B3A47}
+ul.pf li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:2px;background:#0B6E5F}
+ul.pf li b{color:#0C1A27;font-weight:600}
+header > nav, header > section{position:relative;z-index:1}
+@media (prefers-reduced-motion: no-preference){
+  .hero-flow .flow{stroke-dasharray:2 14;animation:pf-flow 6s linear infinite}
+  .hero-flow .flow.slow{animation-duration:9s}
+  .hero-flow .node{transform-box:fill-box;transform-origin:center;animation:pf-pulse 3.2s ease-out infinite}
+  .hero-flow .node.d2{animation-delay:1.1s}
+  .hero-flow .node.d3{animation-delay:2.2s}
+  .hero-flow .glow{animation:pf-drift 18s ease-in-out infinite alternate}
+  header > nav{animation:pf-in .7s ease both}
+  #top > *{animation:pf-in .9s cubic-bezier(.2,.7,.2,1) both}
+  #top > :nth-child(2){animation-delay:.08s}
+  #top > :nth-child(3){animation-delay:.18s}
+  #top > :nth-child(4){animation-delay:.28s}
+  #top > :nth-child(5){animation-delay:.38s}
+  @supports (animation-timeline: view()){
+    #impact > div:first-child, #impact > div:last-child > div, main > section:nth-of-type(2) > div, #work > *, #skills > div:first-child, #skills > div:last-child > div{
+      animation:pf-reveal linear both;animation-timeline:view();animation-range:entry 0% cover 22%}
+    main article{overflow:clip;animation:pf-fade linear both;animation-timeline:view();animation-range:entry 0% cover 20%}
+    main article > div:first-child{animation:pf-from-left linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+    main article > div:last-child{animation:pf-from-right linear both;animation-timeline:view();animation-range:entry 5% cover 32%}
+    main > section:nth-of-type(2) > div > div:last-child > div{position:relative;border-top-color:#DEE2DD !important}
+    main > section:nth-of-type(2) > div > div:last-child > div::before{content:"";position:absolute;left:0;right:0;top:-3px;height:3px;background:#0B6E5F;transform-origin:left center;animation:pf-draw linear both;animation-timeline:view()}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(1)::before{animation-range:cover 18% cover 24%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(2)::before{animation-range:cover 22% cover 28%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(3)::before{animation-range:cover 26% cover 32%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(4)::before{animation-range:cover 30% cover 36%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(5)::before{animation-range:cover 34% cover 40%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(6)::before{animation-range:cover 38% cover 44%}
+    main > section:nth-of-type(2) > div > div:last-child > div:nth-child(7)::before{animation-range:cover 42% cover 48%}
+  }
+  @media (hover:hover){
+    #impact > div:last-child > div, #skills > div:last-child > div{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+    #impact > div:last-child > div:hover, #skills > div:last-child > div:hover{transform:translateY(-4px);box-shadow:0 16px 32px -14px rgba(11,110,95,.35);border-color:#9FD3C6}
+    main article{transition:box-shadow .3s ease,border-color .3s ease}
+    main article:hover{border-color:#B7DCD2;box-shadow:0 28px 56px -30px rgba(12,26,39,.35)}
+    #top a, #contact a{transition:transform .2s ease,box-shadow .2s ease}
+    #top a:hover, #contact a:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(127,214,194,.55)}
+  }
+}
+@keyframes pf-flow{to{stroke-dashoffset:-160}}
+@keyframes pf-pulse{0%{transform:scale(1);opacity:.9}70%{transform:scale(3.2);opacity:0}100%{transform:scale(3.2);opacity:0}}
+@keyframes pf-drift{from{transform:translate(0,0)}to{transform:translate(-140px,90px)}}
+@keyframes pf-in{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@keyframes pf-reveal{from{opacity:0;translate:0 32px}to{opacity:1;translate:0 0}}
+@keyframes pf-fade{from{opacity:0}to{opacity:1}}
+@keyframes pf-from-left{from{opacity:0;translate:-64px 0}to{opacity:1;translate:0 0}}
+@keyframes pf-from-right{from{opacity:0;translate:64px 0}to{opacity:1;translate:0 0}}
+@keyframes pf-draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+</style>
+<style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color: #0C1A27; background: #F6F5F1">
+
+<header style="background: #0C1A27; color: #F6F5F1; position: relative; overflow: hidden">
+  <svg class="hero-flow" aria-hidden="true" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none">
+    <defs><radialGradient id="pfGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7FD6C2" stop-opacity="0.20"></stop><stop offset="1" stop-color="#7FD6C2" stop-opacity="0"></stop></radialGradient></defs>
+    <circle class="glow" cx="1180" cy="260" r="440" fill="url(#pfGlow)"></circle>
+    <g fill="none" stroke="#7FD6C2" stroke-linecap="round" stroke-width="1.5">
+      <path opacity="0.12" d="M 620 820 C 860 760, 900 420, 1120 420 S 1380 180, 1520 160"></path>
+      <path opacity="0.12" d="M 760 860 C 960 720, 1040 600, 1240 600 S 1420 520, 1520 520"></path>
+      <path opacity="0.12" d="M 500 860 C 800 640, 860 300, 1100 260 S 1300 80, 1500 40"></path>
+      <path class="flow" opacity="0.55" d="M 620 820 C 860 760, 900 420, 1120 420 S 1380 180, 1520 160"></path>
+      <path class="flow slow" opacity="0.45" d="M 760 860 C 960 720, 1040 600, 1240 600 S 1420 520, 1520 520"></path>
+      <path class="flow" opacity="0.4" d="M 500 860 C 800 640, 860 300, 1100 260 S 1300 80, 1500 40"></path>
+    </g>
+    <g fill="#7FD6C2">
+      <circle cx="1120" cy="420" r="4"></circle><circle class="node" cx="1120" cy="420" r="4" opacity="0.6"></circle>
+      <circle cx="1240" cy="600" r="4"></circle><circle class="node d2" cx="1240" cy="600" r="4" opacity="0.6"></circle>
+      <circle cx="1100" cy="260" r="4"></circle><circle class="node d3" cx="1100" cy="260" r="4" opacity="0.6"></circle>
+    </g>
+  </svg>
+  <nav style="max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <a href="#top" style="font-family: Space Grotesk, Inter, sans-serif; font-weight: 700; font-size: 18px; color: #F6F5F1; text-decoration: none; letter-spacing: -0.01em">Ashrith Papai</a>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 14px">
+      <a href="#impact" style="color: #C9D3DC; text-decoration: none; padding: 12px 0">Impact</a>
+      <a href="#work" style="color: #C9D3DC; text-decoration: none; padding: 12px 0">Signature work</a>
+      <a href="#opensource" style="color: #C9D3DC; text-decoration: none; padding: 12px 0">Open source</a>
+      <a href="#skills" style="color: #C9D3DC; text-decoration: none; padding: 12px 0">Skills</a>
+      <a href="#contact" style="color: #C9D3DC; text-decoration: none; padding: 12px 0">Contact</a>
+    </div>
+  </nav>
+
+  <section id="top" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-wrap: wrap; gap: 10px">
+      <span style="font-size: 13px; font-weight: 500; padding: 8px 14px; border: 1px solid #2E4256; border-radius: 999px; color: #C9D3DC">Salesforce Certified Marketing Cloud Administrator</span>
+      <span style="font-size: 13px; font-weight: 500; padding: 8px 14px; border: 1px solid #2E4256; border-radius: 999px; color: #C9D3DC">Salesforce Certified Marketing Cloud Email Specialist</span>
+      <span style="font-size: 13px; font-weight: 500; padding: 8px 14px; border: 1px solid #2E4256; border-radius: 999px; color: #C9D3DC">Salesforce Certified AI Associate</span>
+      <span style="font-size: 13px; font-weight: 500; padding: 8px 14px; border: 1px solid #2E4256; border-radius: 999px; color: #C9D3DC">Salesforce Certified AI Specialist</span>
+    </div>
+    <h1 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.04; letter-spacing: -0.025em; max-width: 1000px; text-wrap: balance">I turn customer communication into systems that <span style="color: #7FD6C2">run themselves.</span></h1>
+    <p style="margin: 0; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.6; color: #C9D3DC; max-width: 760px">Salesforce Marketing Cloud Specialist. Over the past 2+ years I’ve built marketing automation end to end — journeys, CloudPages, SQL, SMS, integrations and platform administration — shipping 100+ production changes for an enterprise client in a highly regulated industry, from the first stakeholder conversation to go-live and long-term support.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <a href="#work" style="background: #7FD6C2; color: #0C1A27; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 10px">See the work</a>
+      <a href="#contact" style="color: #F6F5F1; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 10px; border: 1px solid #2E4256">Get in touch</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: #2E4256; border: 1px solid #2E4256; border-radius: 14px; overflow: hidden; margin-top: 16px">
+      <div style="background: #0C1A27; padding: 22px 24px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #F6F5F1" data-count="1">100+</div><div style="font-size: 13px; color: #A9B6C2; margin-top: 4px">production changes shipped</div></div>
+      <div style="background: #0C1A27; padding: 22px 24px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #F6F5F1" data-count="1">1.43M</div><div style="font-size: 13px; color: #A9B6C2; margin-top: 4px">reachable contacts validated</div></div>
+      <div style="background: #0C1A27; padding: 22px 24px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #F6F5F1">2+ yrs</div><div style="font-size: 13px; color: #A9B6C2; margin-top: 4px">hands-on Salesforce Marketing Cloud</div></div>
+      <div style="background: #0C1A27; padding: 22px 24px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #F6F5F1">4</div><div style="font-size: 13px; color: #A9B6C2; margin-top: 4px">Salesforce certifications</div></div>
+    </div>
+  </section>
+</header>
+
+<main>
+
+<section id="impact" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+    <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0B6E5F">Impact at a glance</div>
+    <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 600">Outcomes, not just builds.</h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A5866">Every number below traces back to a specific piece of work in production.</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">~50,000</div><div style="font-weight: 600; font-size: 15px">manual calls removed per year (projected)</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Automated outreach for 8 appointment-request work queues, replacing ~200 manual attempts a day.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">1.43M</div><div style="font-weight: 600; font-size: 15px">contactable patients validated</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Rebuilt channel-preference logic after finding a data-type defect in reach counts.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">~688K</div><div style="font-weight: 600; font-size: 15px">unique patients engaged in 6 months</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Email and SMS journeys across care programs.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">6.4M+</div><div style="font-weight: 600; font-size: 15px">dead contacts purged</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Monthly purge program with automated reminders, cutting billable contacts and storage.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em">8 of 8</div><div style="font-weight: 600; font-size: 15px">SMS short codes passed carrier re-audit</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Fixed in under 4 weeks, protecting every patient SMS program.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">25,000+</div><div style="font-weight: 600; font-size: 15px">recipients in the largest single send</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Ad hoc campaign cleaned, deduped and launched in 10 days.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em">Same day</div><div style="font-weight: 600; font-size: 15px">to 48-hour urgent turnaround</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">Clinic closures, construction and road notices added to live reminders.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em">0</div><div style="font-weight: 600; font-size: 15px">missed security deadlines</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">OAuth secret rotated 2 days early, with a runbook for every future cycle.</div></div>
+    <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 38px; font-weight: 600; color: #0B6E5F; letter-spacing: -0.02em" data-count="1">20+</div><div style="font-weight: 600; font-size: 15px">weekly reports, fully automated</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866">18 months of send history in self-running reports for leadership.</div></div>
+  </div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 40px">
+  <div style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 44px); display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px 40px; justify-content: space-between; align-items: flex-end">
+      <div style="display: flex; flex-direction: column; gap: 10px; max-width: 620px">
+        <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0B6E5F">How I work</div>
+        <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(26px, 2.8vw, 36px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 600">End to end ownership, on a lean team.</h2>
+      </div>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5866; max-width: 420px">The go-to owner for journeys, CloudPages, SQL and platform administration, working directly with clinical leaders, operations and marketing.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px">
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">01</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Discover</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Stakeholder intake and requirements</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">02</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Architect</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Data model, segmentation and flow</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">03</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Build</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">SQL, AMPscript, SSJS, journeys, pages</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">04</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">QA</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Test sends and record validation</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">05</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Change control</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Owner sign-off and approvals</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">06</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Go-live</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Launch, throttling and monitoring</div></div>
+      <div style="border-top: 3px solid #0B6E5F; padding-top: 14px"><div style="font-size: 12px; font-weight: 600; color: #0B6E5F">07</div><div style="font-weight: 600; font-size: 15px; margin-top: 4px">Support</div><div style="font-size: 13px; color: #4A5866; margin-top: 4px; line-height: 1.5">Runbooks, docs and handover</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px; display: flex; flex-direction: column; gap: 12px">
+  <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0B6E5F">Signature work</div>
+  <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 600; max-width: 820px">Seven workstreams I owned end to end.</h2>
+  <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A5866; max-width: 720px">Delivered for a large US healthcare client, from the first stakeholder conversation through architecture, build, QA, change control, go-live and long-term support. The same patterns carry to any industry running Marketing Cloud.</p>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">01 · Patient outreach</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Patient outreach automation at health-system scale</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Schedulers worked referral queues line by line, an outside vendor ran pre-registration calls, and quality teams had no automated way to reach patients overdue for diabetes, pediatric or screening care. Every missed contact was a missed appointment, a missed quality measure and lost revenue.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F" data-count="1">~50,000</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">manual outreach attempts a year taken off staff (projected)</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I architected and delivered</h4>
+        <ul class="pf">
+          <li><b>Referral work-queue automation, 8 queues across 2 service lines.</b> Data extensions, SQL automations and Journey Builder flows that turn every referral order into a timed email and SMS sequence, with reason codes written back cleanly to the patient record.</li>
+          <li><b>In-house pre-registration program that replaced an outside vendor.</b> Daily Epic EHR file over SFTP, header-less import, SQL segmentation for consented patients with appointments in the next 30 days, multi-step email and SMS, and a results file back to the EHR. Solved UTF-16 to UTF-8 encoding, layout changes, age-gated AMPscript personalization, weekend suppression and reminder spacing.</li>
+          <li><b>Diabetes (HbA1c) quality-gap journey, built from zero</b>, iterated with the quality team, with encounter logging and holiday-aware due dates.</li>
+          <li><b>Value-based care enhancements:</b> 90- and 180-day pediatric overdue tiers, hospice exclusions across every value-based journey, and high-risk cervical-screening annual-letter logic.</li>
+          <li><b>Gynecology patient-education journey</b> across 16 visit types in a rolling 30-day window — and when the planned microsite slipped, I built the landing page in SFMC to hold the launch date.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>Automated ~200 daily queue contacts, building on an earlier phase that cut referral contact effort by nearly 50%.</li>
+          <li>Outside pre-registration vendor replaced by a closed-loop program the team fully controls.</li>
+          <li>Journeys now cover diabetes, pediatric and adult preventive, Medicare wellness, colorectal and breast screening, and specialty education.</li>
+          <li>Clinical safety built in: hospice patients excluded system-wide, scheduled patients no longer told to schedule, weekend and holiday due dates back-filled. Every journey signed off by its clinical owner.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">02 · CloudPages engineering</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Apps built inside the marketing platform</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Departments kept asking for event sign-ups, live audience interaction, surveys and opt-out pages — and the default answer was a new vendor, a new contract and another data silo. Meanwhile one business unit was quietly losing subscribers, including its own staff.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F">$0</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">in new software for a ~600-invitee symposium, run end to end on existing licenses</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I architected and delivered</h4>
+        <ul class="pf">
+          <li><b>7-page live-event engagement platform</b> for an annual pharmaceutical symposium: save-the-date waves, a registration CloudPage with walk-in editing, a registration-to-confirmation journey that drops registrants from reminders, QR-driven live polling, per-speaker Q&amp;A loaded from data extensions and a moderator control panel. Demoed to senior stakeholders including a VP, with a user guide and event-day support.</li>
+          <li><b>Post-event survey application</b> with reminder, thank-you and auto-closed states, and response export to the business.</li>
+          <li><b>Two-step unsubscribe center</b> that email-security bots can’t complete but real people can — designed, tested, demoed and documented in 5 days.</li>
+          <li><b>Advisor program sign-up forms</b> that block under-18 submissions by date of birth and accept only staff email domains.</li>
+          <li><b>Branded 404 experience</b> across 3 business units, an internal journey dashboard in the new brand, SMS compliance pages and an in-platform patient-education microsite.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>Subscriber leakage stopped at the source, with opt-out kept fully compliant.</li>
+          <li>Under-18 participants blocked at the front door, closing a consent and patient-safety gap.</li>
+          <li>Launch dates held even when outside dependencies slipped.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">03 · Campaign operations</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Rapid-response patient communications</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">The person operations and marketing call when a message has to go out right, in every language, by tomorrow. In healthcare, a wrong date, number or audience is a patient-experience failure, not a typo.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F">Same day</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">a medical-director-priority road-closure notice went live the day it was requested</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I delivered</h4>
+        <ul class="pf">
+          <li><b>15+ end-to-end campaigns</b> from intake to tracking report: newsletters, a partnership announcement, billing-change notices, a recruitment drive with dynamic primary-care-provider personalization, a payment-plan push and an urgent-care conversion launch.</li>
+          <li><b>Operational notices injected into live appointment reminders</b>, scoped by department ID and visit type so only affected patients see them — construction, parking, road closures and a kiosk self-arrival pilot.</li>
+          <li><b>Multilingual relocation campaign</b> across email, SMS and CloudPages, with a rolling year-long SQL schedule that keeps only each patient’s earliest visit.</li>
+          <li><b>~20 QR codes and branded short links</b> with scan-performance reporting and self-service guidance.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>25,000+ recipients in a single send, cleaned, deduped and launched within 10 days of receiving the list.</li>
+          <li>A campus construction notice went from department list to live in 2 days.</li>
+          <li>Every launch gated by test sends and sign-off from each business owner.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">04 · Compliance &amp; governance</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Compliance, security and platform health</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">In one year the platform faced a carrier audit flagging 8 SMS short codes, a mandatory 180-day OAuth rotation with a hard deadline, millions of dead contacts and daylight-saving shifts that could knock every send time off by an hour.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F">8 of 8</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">short codes passed carrier re-audit in under 4 weeks</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I delivered</h4>
+        <ul class="pf">
+          <li><b>SMS short-code compliance rescue.</b> Researched CTIA requirements, worked with Salesforce support, traced unexpected traffic to API calls opting subscribers in through an unused short code, built Terms and Privacy pages on CloudPages and updated every opt-in confirmation.</li>
+          <li><b>OAuth client-secret rotation across 7 API installed packages.</b> Aligned Marketing Cloud, Health Cloud and external API teams with an action plan defining responsibilities, validated the new secret with a Postman authentication test, activated it and wrote the runbook for future 180-day cycles.</li>
+          <li><b>SMS consent data-flow mapping</b> end to end across Marketing Cloud, Health Cloud, MuleSoft and Epic EHR, tracing undocumented configurations to support integration troubleshooting.</li>
+          <li><b>Monthly governance program</b> — import field checks, deactivation of users inactive 90+ days and a dead-contact purge, turned from a manual chore into a batched automation that alerts the team when to act.</li>
+          <li><b>Daylight-saving automation</b> that recalculates send-time offsets for every journey each year, peer-verified before go-live.</li>
+          <li><b>Access fixes:</b> a knowledge-base article and a rewritten new-user setup guide to stop repeat tickets.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>Every patient SMS program protected from suspension.</li>
+          <li>6.4M+ dead contacts purged, cutting billable contact volume and storage.</li>
+          <li>Security deadline beaten by 2 days, and the next rotation fully documented.</li>
+          <li>Every journey protected from time-change drift for years ahead with one automation.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">05 · Data &amp; analytics</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Data engineering and executive reporting</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Data views keep only 6 months of history, patient data arrives from several systems, reports were pulled by hand — and the key number, how many patients can actually be reached, was quietly wrong.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px; display: flex; flex-direction: column; gap: 12px">
+        <div><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F" data-count="1">1.43M</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">contactable patients, validated for the first time</div></div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-size: 13px; color: #1E3A34">
+          <div><div style="font-weight: 600; font-size: 17px; color: #08493F">576K</div>email only</div>
+          <div><div style="font-weight: 600; font-size: 17px; color: #08493F">111K</div>text only</div>
+          <div><div style="font-weight: 600; font-size: 17px; color: #08493F">738K</div>both</div>
+        </div>
+      </div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I delivered</h4>
+        <ul class="pf">
+          <li><b>Self-running reporting suite</b> in Automation Studio: monthly value-based care send history, weekly and monthly referral volumes, per-queue hourly sends and weekly pre-registration volume — no manual pulls.</li>
+          <li><b>Historical send archive</b> that snapshots email and SMS activity before it ages out of data views, making year-over-year reporting possible.</li>
+          <li><b>Executive analysis packs:</b> referral email performance, message-fatigue analysis by channel and journey step, and 12-month volume reporting for leadership presentations.</li>
+          <li><b>Reach metrics</b> joining _Sent, _Job, _JourneyActivity, _Journey and _SMSMessageTracking with normalized subscriber keys.</li>
+          <li><b>Data-quality fix:</b> boolean preference fields were evaluated as 0/1 in SQL while displaying as True/False, breaking channel-reach counts. Found it and corrected the logic.</li>
+          <li><b>SQL and data-governance audit:</b> analyzed 680+ SQL Query activities against data-retention needs across 10 CRM-synchronized data extensions, flagging 10+ unbounded queries for storage optimization.</li>
+          <li><b>API migration inventory:</b> every journey mapped to source system, cadence, CRM objects and fields in active use, plus retention windows by object.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>~688K unique patients reached in 6 months — the baseline for contact-frequency strategy.</li>
+          <li>18 months of trend data and 20+ consecutive weekly reports delivered automatically.</li>
+          <li>API migration scoped from facts, not guesses.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center"><span style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">06 · Brand &amp; strategy</span><span style="font-size: 12px; font-weight: 600; color: #8A4B08; background: #FBEBD5; padding: 4px 10px; border-radius: 999px">In progress</span></div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">System-wide brand migration and platform strategy</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Retiring a brand in marketing automation means hundreds of assets across three business units, multilingual patient scripts, templates that must match the EHR’s patient emails — and a sending-domain change that, done wrong, wrecks deliverability.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F">Selected</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">my new-brand email template became the standard for EHR alignment</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I’m delivering</h4>
+        <ul class="pf">
+          <li><b>Full asset inventory</b> with tracker files per business unit, so every email, SMS, CloudPage and template has an owner and a status.</li>
+          <li><b>New-brand email template</b> designed with the EHR communications team.</li>
+          <li><b>Script de-branding</b> across colorectal and breast screening, Medicare wellness, pediatric preventive, annual wellness and opt-out confirmations, in every language.</li>
+          <li><b>Sending-domain and Sender Authentication Package plan</b> with Salesforce support and the account team, toward a December go-live window.</li>
+          <li><b>Strategy briefs for leadership</b> on branded SMS via RCS, branded link shortening and attachment-based data sends.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">Business impact</h4>
+        <ul class="pf">
+          <li>One consistent patient-facing brand across EHR and marketing email.</li>
+          <li>Deliverability protected by planning the domain change before cutover, not after.</li>
+          <li>Decision-ready options for leadership, each with a clear next step.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">07 · Incident response</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">Fast root-cause analysis when patient messages go wrong</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Patient-facing errors closed quickly, with documented root causes — protecting patient trust and keeping clinical owners confident in automation.</p>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I resolved</h4>
+      <ul class="pf">
+        <li><b>Missed weekend patients:</b> screening journeys skipped patients whose due dates fell on weekends. Fixed the logic and back-filled every missed patient the same week.</li>
+        <li><b>Reminders to already-scheduled patients:</b> traced a parent’s report to appointment-status logic letting cancelled and unlisted visit types through; rewrote the query and validated with sample records.</li>
+        <li><b>Wrong “join now” link on phone visits:</b> changed reminder logic so virtual visits show the right instructions, promoted through change control.</li>
+        <li><b>Two-way SMS dashboard counts:</b> found why confirm and cancel clicks weren’t counting and restored accurate reporting.</li>
+        <li><b>Broken links and outdated numbers</b> across discharge, referral and GI outreach in every channel, plus a deliverability investigation with Salesforce support.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section id="opensource" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px; display: flex; flex-direction: column; gap: 12px">
+  <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0B6E5F">Open source</div>
+  <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 600; max-width: 820px">Beyond client work: a tool I’m building for every marketer.</h2>
+  <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A5866; max-width: 720px">A personal open-source project, built in my own time, to solve a problem I’ve seen in every marketing team.</p>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px">
+  <article style="background: #FFFFFF; border: 1px solid #DEE2DD; border-radius: 20px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 15px; font-weight: 600; color: #0B6E5F">Open source · In progress</div>
+      <h3 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-weight: 600">CampaignOps: a free campaign link checker</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5866">Campaigns can run perfectly while reports make no sense, because of the links. One capital letter splits a source into two; one wrong medium turns paid ads into “organic”. CampaignOps catches those mistakes before launch, for free, entirely in the browser.</p>
+      <div style="background: #E3EFEB; border-radius: 14px; padding: 20px 22px; margin-top: 8px"><div style="font-family: Space Grotesk, Inter, sans-serif; font-size: 34px; font-weight: 600; color: #08493F" data-count="1">547</div><div style="font-size: 14px; line-height: 1.5; color: #1E3A34; margin-top: 4px">automated checks on every release, plus deliberately broken code to prove the tests catch real faults</div></div>
+    </div>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">What I’m building</h4>
+        <ul class="pf">
+          <li><b>A browser-only tool to build, check and fix campaign links:</b> a single web page with no server, no sign-up and no tracking. Links never leave the user’s computer, which makes it safe for regulated industries.</li>
+          <li><b>19 link and tagging checks:</b> missing or mis-cased UTMs, spaces, broken links, test-site destinations and team naming rules, plus across-file checks that spot duplicate links, spelling variants and mixed mediums in CSVs of thousands of links.</li>
+          <li><b>GA4 channel prediction:</b> for every link, based on Google’s published default channel rules and 819-source category list, now being validated against a live GA4 property.</li>
+          <li><b>A one-click fixer:</b> separates safe fixes from decisions, always shows before and after, and exports a cleaned file ready to re-upload; plus reusable rule profiles and a one-page report.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0C1A27">How I’m running it</h4>
+        <ul class="pf">
+          <li><b>Product owner end to end:</b> a written spec with decision options for every release, grown from a prototype through 8 releases.</li>
+          <li><b>AI-assisted development with checks and balances:</b> one AI model builds, a second independently reviews every release, and I test hands-on in the browser before anything ships.</li>
+          <li><b>Quality by design:</b> full regression testing on every release, and mutation testing, where code is broken on purpose to prove the tests catch it.</li>
+        </ul>
+      </div>
+      <p style="margin: 0; padding-top: 18px; border-top: 1px solid #DEE2DD; font-size: 13px; line-height: 1.5; color: #4A5866">v1.0 launching soon as free, open-source software (MIT licence).</p>
+    </div>
+  </article>
+</section>
+
+<section id="skills" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 32px">
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+    <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0B6E5F">Skills and tools</div>
+    <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 600">The full Marketing Cloud stack, used in production.</h2>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px">
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Journey Builder</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Multi-step email/SMS journeys, wait logic, encounter and lead activities, versioning, exclusions</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Automation Studio</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">SQL query, import, file transfer, extract and send activities; scheduled reports</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">SQL</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Joins across CRM sync DEs and data views (_Sent, _Job, _Journey, _SMSMessageTracking), ROW_NUMBER dedupe, date windows</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">AMPscript, SSJS and HTML/CSS</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Conditional content, form validation, CloudPage logic, dynamic personalization</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">CloudPages</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Registration, polling, Q&amp;A, surveys, unsubscribe and preference pages, 404 page, dashboards</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">MobileConnect</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">SMS content, short-code compliance, opt-in/opt-out data flow, link shortening</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Content Builder and Email Studio</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Branded templates, multilingual content, A/B testing, Outlook rendering fixes</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Admin and security</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Installed packages and OAuth secrets, user audits, contact purge, business units, sender profiles, SAP and domains</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Integration</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Health Cloud, Epic EHR and MuleSoft data flows, SFTP file exchange, API authentication and Postman testing</div></div>
+    <div style="border: 1px solid #DEE2DD; background: #FFFFFF; border-radius: 14px; padding: 22px"><div style="font-weight: 600; font-size: 16px">Delivery</div><div style="font-size: 14px; line-height: 1.55; color: #4A5866; margin-top: 6px">Requirements, change requests, QA, go-live, monitoring, runbooks and 12+ journey technical documents</div></div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact" style="background: #0C1A27; color: #F6F5F1; margin-top: 80px">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 56px; display: flex; flex-direction: column; gap: 28px">
+    <h2 style="margin: 0; font-family: Space Grotesk, Inter, sans-serif; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em; font-weight: 600; max-width: 860px; text-wrap: balance">Need Marketing Cloud that runs itself? <span style="color: #7FD6C2">Let’s talk.</span></h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D3DC; max-width: 640px">Open to Salesforce Marketing Cloud and marketing automation roles in any industry, and to project work with teams who need journeys, CloudPages and data done right.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <a href="mailto:ashrithpapaii@gmail.com" style="background: #7FD6C2; color: #0C1A27; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 10px">ashrithpapaii@gmail.com</a>
+      <a href="tel:+918464844550" style="color: #F6F5F1; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 10px; border: 1px solid #2E4256">+91 8464844550</a>
+      <a href="https://www.linkedin.com/in/ashrithpapai" style="color: #F6F5F1; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 10px; border: 1px solid #2E4256">linkedin.com/in/ashrithpapai</a>
+    </div>
+    <div style="border-top: 1px solid #2E4256; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 13px; color: #A9B6C2">
+      <span>Ashrith Papai · Salesforce Marketing Cloud Specialist · Bangalore, India</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+(function(){
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function countUp(el){
+    var node=el.firstChild; if(!node||node.nodeType!==3) return;
+    var final=node.nodeValue;
+    var m=final.match(/^([^0-9]*)([0-9][0-9,]*(?:\.[0-9]+)?)(.*)$/); if(!m) return;
+    var prefix=m[1], numStr=m[2], suffix=m[3];
+    var comma=numStr.indexOf(',')!==-1, dec=(numStr.split('.')[1]||'').length;
+    var target=parseFloat(numStr.replace(/,/g,'')), dur=1500, start=performance.now();
+    function step(t){
+      var p=Math.min(1,(t-start)/dur), v=target*(1-Math.pow(1-p,3));
+      var s=dec? v.toFixed(dec) : String(Math.round(v));
+      if(comma&&!dec) s=Number(s).toLocaleString('en-US');
+      if(p<1){ node.nodeValue=prefix+s+suffix; requestAnimationFrame(step); } else { node.nodeValue=final; }
+    }
+    requestAnimationFrame(step);
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(!e.isIntersecting) return; io.unobserve(e.target); countUp(e.target); });
+  },{threshold:0.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
